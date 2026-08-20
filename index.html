@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#fff8ef" />
+  <title>鍣楀徑娑堟秷涔?/title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="ambient ambient-one"></div>
+  <div class="ambient ambient-two"></div>
+
+  <main class="app-shell">
+    <header class="topbar">
+      <a class="brand" href="#" aria-label="鍣楀徑娑堟秷涔愰椤?>
+        <span class="brand-mark">鉁?/span>
+        <span>鍣楀徑娑堟秷涔?/span>
+      </a>
+      <button class="icon-button" id="soundButton" type="button" aria-label="鍒囨崲闊虫晥" title="鍒囨崲闊虫晥">鈾?/button>
+    </header>
+
+    <section class="hero">
+      <div>
+        <p class="eyebrow">鎶婂枩娆㈢殑鐓х墖鍙樻垚娓告垙</p>
+        <h1>浜ゆ崲銆佽繛绾裤€?br><em>鍣楀徑涓€涓嬶紒</em></h1>
+        <p class="intro">涓変釜鐩稿悓鍥炬杩炴垚涓€绾垮嵆鍙秷闄ゃ€備笂浼犱綘鐨勭収鐗囷紝鎵撻€犱笓灞炵殑娑堟秷涔愭鐩樸€?/p>
+      </div>
+
+      <div class="stats" aria-label="娓告垙鏁版嵁">
+        <div class="stat-card score-card">
+          <span>褰撳墠寰楀垎</span>
+          <strong id="score">0</strong>
+        </div>
+        <button class="restart-button" id="restartButton" type="button">
+          <span>鈫?/span> 閲嶆柊寮€灞€
+        </button>
+      </div>
+    </section>
+
+    <section class="game-layout">
+      <aside class="tool-panel">
+        <div class="panel-heading">
+          <span class="panel-icon">鈼?/span>
+          <div>
+            <h2>鎴戠殑鍥炬</h2>
+            <p>涓婁紶 1鈥? 寮犲浘鐗?/p>
+          </div>
+        </div>
+
+        <label class="upload-zone" id="uploadZone" for="imageUpload">
+          <input id="imageUpload" type="file" accept="image/*" multiple />
+          <span class="upload-icon">锛?/span>
+          <strong>閫夋嫨鐓х墖</strong>
+          <small>涔熷彲鎷栨斁鍒拌繖閲?/small>
+        </label>
+
+        <div class="image-list" id="imageList" aria-live="polite"></div>
+
+        <div class="tip-box">
+          <span>鉁?/span>
+          <p><strong>灏忔彁绀?/strong><br>鑷冲皯浣跨敤 4 绉嶅浘妗堬紝娓告垙浼氭洿鏈夎叮銆?/p>
+        </div>
+      </aside>
+
+      <section class="board-wrap">
+        <div class="board-toolbar">
+          <p id="statusText"><span class="pulse-dot"></span> 閫夋嫨涓や釜鐩搁偦鏂瑰潡杩涜浜ゆ崲</p>
+          <span class="combo" id="comboBadge">鍑嗗濂戒簡</span>
+        </div>
+        <div class="board" id="board" role="grid" aria-label="娑堟秷涔愭鐩?></div>
+      </section>
+    </section>
+
+    <footer>
+      <span>鍣楀徑娑堟秷涔?/span>
+      <span>鐓х墖浠呬繚瀛樺湪浣犵殑娴忚鍣ㄤ腑</span>
+    </footer>
+  </main>
+
+  <script src="game.js"></script>
+</body>
+</html>
+
